@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zeenia Loops & Love</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-logo">🌸 Zeenia Loops &amp; Love</div>
+    <button class="nav-toggle" onclick="toggleMenu()" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" onclick="closeMenu()">Home</a></li>
+      <li><a href="#about" onclick="closeMenu()">About</a></li>
+      <li><a href="#products" onclick="closeMenu()">Products</a></li>
+      <li><a href="#how-to-order" onclick="closeMenu()">How to Order</a></li>
+      <li><a href="#gallery" onclick="closeMenu()">TikTok</a></li>
+      <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-flowers">
+      <span class="petal p1">🌸</span>
+      <span class="petal p2">🌺</span>
+      <span class="petal p3">🌸</span>
+      <span class="petal p4">🌷</span>
+      <span class="petal p5">🌸</span>
+      <span class="petal p6">🌺</span>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Handmade with heart</p>
+      <h1 class="hero-title">Zeenia Loops<br/><em>&amp; Love</em></h1>
+      <p class="hero-tagline">Love in Every Stitch</p>
+      <div class="hero-cta-group">
+        <a href="#products" class="btn btn-primary">Shop Products</a>
+        <a href="#how-to-order" class="btn btn-outline">Custom Order</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">&#8595; Scroll to explore</div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="section-inner about-grid">
+      <div class="about-visual">
+        <div class="about-badge">✦ Est. 2023</div>
+        <div class="about-img-placeholder">
+          <span>🧶</span>
+          <p>Zeenia<br/>at work</p>
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="section-eyebrow">Our story</p>
+        <h2 class="section-title">Made by hands,<br/>felt by heart</h2>
+        <p>Hi, I'm <strong>Zeenia</strong> — the maker behind every loop and knot you see here. What started as a quiet hobby during long evenings turned into a full love affair with crochet.</p>
+        <p>Every piece I create is made by hand, with carefully chosen yarns and lots of patience. No two pieces are exactly alike — and that's exactly the point.</p>
+        <p>Follow along on TikTok to see the magic happen stitch by stitch. 🌸</p>
+        <a href="https://www.tiktok.com/@zeenia_loopsnlove?is_from_webapp=1&sender_device=pc" target="_blank" class="btn btn-primary" style="margin-top:1rem;">Watch on TikTok</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS ===== -->
+  <section class="section section-pink" id="products">
+    <div class="section-inner">
+      <p class="section-eyebrow center">What I make</p>
+      <h2 class="section-title center">Our Collection</h2>
+      <p class="section-subtitle center">Every item handcrafted with premium yarn — available ready-to-ship or as a custom order.</p>
+
+      <div class="products-grid">
+
+        <div class="product-card">
+          <div class="product-icon">🧣</div>
+          <h3>Scarves</h3>
+          <p>Cozy, chunky, and endlessly stylish. Available in all colors and lengths — perfect for gifting.</p>
+          <span class="product-tag">Ready to ship · Custom</span>
+        </div>
+
+        <div class="product-card">
+          <div class="product-icon">👜</div>
+          <h3>Bags</h3>
+          <p>Tote bags, mini bags, and beach bags woven with care. Built to carry both your things and your vibe.</p>
+          <span class="product-tag">Ready to ship · Custom</span>
+        </div>
+
+        <div class="product-card">
+          <div class="product-icon">🎀</div>
+          <h3>Hair Accessories</h3>
+          <p>Crochet scrunchies, headbands, and clips that add a soft, handmade touch to any look.</p>
+          <span class="product-tag">Ready to ship · Custom</span>
+        </div>
+
+        <div class="product-card product-card-custom">
+          <div class="product-icon">✨</div>
+          <h3>Custom Orders</h3>
+          <p>Have something specific in mind? I'll crochet it just for you — your color, your size, your design.</p>
+          <a href="#contact" class="btn btn-primary" style="margin-top:0.8rem;display:inline-block;">Request Custom</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW TO ORDER ===== -->
+  <section class="section" id="how-to-order">
+    <div class="section-inner">
+      <p class="section-eyebrow center">Simple process</p>
+      <h2 class="section-title center">How to Order</h2>
+      <p class="section-subtitle center">Getting your handmade piece is easy — just four steps.</p>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <h3>Browse &amp; Choose</h3>
+          <p>Pick a product from our collection or come with your own custom idea in mind.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <h3>Message on WhatsApp</h3>
+          <p>Send us a message with your product choice, color preference, size, and any special requests.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <h3>Confirm &amp; Pay</h3>
+          <p>We'll confirm the details, share the price, and you send the advance payment to confirm your order.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">04</div>
+          <h3>Receive Your Order</h3>
+          <p>We handcraft your piece with love and deliver it to your doorstep. 🎁</p>
+        </div>
+      </div>
+
+      <div class="order-cta-wrap">
+        <a href="https://wa.me/923000000000?text=Hi%20Zeenia!%20I%20want%20to%20place%20an%20order%20from%20Zeenia%20Loops%20%26%20Love%20%F0%9F%8C%B8"
+           target="_blank" class="btn btn-whatsapp">
+          <i class="fab fa-whatsapp"></i> Order via WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TIKTOK GALLERY ===== -->
+  <section class="section section-pink" id="gallery">
+    <div class="section-inner">
+      <p class="section-eyebrow center">Behind the stitch</p>
+      <h2 class="section-title center">TikTok Gallery</h2>
+      <p class="section-subtitle center">Watch me create — from a single loop to a finished piece. Follow for new drops every week.</p>
+
+      <div class="tiktok-grid">
+        <div class="tiktok-card">
+          <div class="tiktok-thumb">🧶</div>
+          <p>Crochet scarf time-lapse ✨</p>
+        </div>
+        <div class="tiktok-card">
+          <div class="tiktok-thumb">👜</div>
+          <p>Tote bag process 🌸</p>
+        </div>
+        <div class="tiktok-card">
+          <div class="tiktok-thumb">🎀</div>
+          <p>Hair scrunchie tutorial 💕</p>
+        </div>
+        <div class="tiktok-card">
+          <div class="tiktok-thumb">🌷</div>
+          <p>Custom order reveal 🎁</p>
+        </div>
+      </div>
+
+      <div class="order-cta-wrap">
+        <a href="https://tiktok.com/@zeenia_loopsnlove" target="_blank" class="btn btn-tiktok">
+          <i class="fab fa-tiktok"></i> Follow @zeenia_loopsnlove
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact">
+    <div class="section-inner contact-grid">
+      <div class="contact-text">
+        <p class="section-eyebrow">Get in touch</p>
+        <h2 class="section-title">Let's make something<br/>beautiful together</h2>
+        <p>Have a question, want a custom order, or just want to say hi? Reach out on WhatsApp — I reply fast! 🌸</p>
+
+        <div class="contact-links">
+          <a href="https://wa.me/923000000000?text=Hi%20Zeenia!%20I%20found%20you%20on%20TikTok%20and%20would%20love%20to%20order%20something%20%F0%9F%8C%B8"
+             target="_blank" class="contact-item whatsapp-link">
+            <i class="fab fa-whatsapp"></i>
+            <span>Chat on WhatsApp</span>
+          </a>
+          <a href="https://tiktok.com/@zeenia_loopsnlove" target="_blank" class="contact-item tiktok-link">
+            <i class="fab fa-tiktok"></i>
+            <span>@zeenia_loopsnlove</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-visual">
+        <div class="contact-card">
+          <p class="contact-card-emoji">🌸</p>
+          <h3>Zeenia Loops &amp; Love</h3>
+          <p>Handmade crochet from the heart.<br/>Orders open — DM to get yours!</p>
+          <div class="yarn-strip">🧶 🌷 🧶 🌷 🧶</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-logo">🌸 Zeenia Loops &amp; Love</p>
+      <p class="footer-tagline">Love in Every Stitch</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#how-to-order">Order</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer-copy">&copy; 2024 Zeenia Loops &amp; Love. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('open');
+    }
+    function closeMenu() {
+      document.getElementById('navLinks').classList.remove('open');
+    }
+
+    // Smooth scroll active link highlight
+    const sections = document.querySelectorAll('section[id]');
+    const navAs = document.querySelectorAll('.nav-links a');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(sec => {
+        if (window.scrollY >= sec.offsetTop - 80) current = sec.getAttribute('id');
+      });
+      navAs.forEach(a => {
+        a.classList.remove('active');
+        if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
